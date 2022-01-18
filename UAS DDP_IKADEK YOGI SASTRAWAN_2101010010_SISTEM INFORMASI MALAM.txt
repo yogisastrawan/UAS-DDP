@@ -1,0 +1,29 @@
+nama :kadek yogi sastrawan 
+nim : 2101010010
+prodi : sistem informasi 
+
+
+
+int main()
+{
+     int x = 0;
+    int rerata;
+    string nama_mapel[5] = {"agama","ipa","ips","senibudaya","penjas"};
+    int mapel[5];
+    for(int i = 0; i<5 ;i++){
+        cout << "masukkan nilai "<<nama_mapel[i]<<" : ";
+        cin >> mapel[i];
+    }
+     for(int j = 0; j<5 ;j++){
+        x = x + mapel[j];
+        cout << nama_mapel[j] << " : ";
+        cout << " ";
+        cout << mapel[j]; 
+        cout << ", ";
+     }
+    cout << endl;
+    rerata = x/5;
+    cout <<"rata - rata : "<< rerata;
+
+    return 0;
+}
